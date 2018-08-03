@@ -1,0 +1,78 @@
+About libvpx
+============
+
+Home: https://www.webmproject.org/
+
+Package license: 3-clause BSD
+
+Feedstock license: BSD 3-Clause
+
+Summary: A high-quality, open video format for the web
+
+libvpx is a free software video codec library from
+Google and the Alliance for Open Media (AOMedia).
+It serves as the reference software implementation for
+the video coding formats VP8 and VP9, and for AV1 a
+special fork named libaom that was stripped of
+backwards compatibility.
+
+
+Current build status
+====================
+
+[![Linux](https://img.shields.io/circleci/project/github/loopbio/libvpx-feedstock/master.svg?label=Linux)](https://circleci.com/gh/loopbio/libvpx-feedstock)
+[![OSX](https://img.shields.io/travis/loopbio/libvpx-feedstock/master.svg?label=macOS)](https://travis-ci.org/loopbio/libvpx-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+
+Current release info
+====================
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libvpx-green.svg)](https://anaconda.org/loopbio/libvpx) | [![Conda Downloads](https://img.shields.io/conda/dn/loopbio/libvpx.svg)](https://anaconda.org/loopbio/libvpx) | [![Conda Version](https://img.shields.io/conda/vn/loopbio/libvpx.svg)](https://anaconda.org/loopbio/libvpx) | [![Conda Platforms](https://img.shields.io/conda/pn/loopbio/libvpx.svg)](https://anaconda.org/loopbio/libvpx) |
+
+Installing libvpx
+=================
+
+Installing `libvpx` from the `loopbio` channel can be achieved by adding `loopbio` to your channels with:
+
+```
+conda config --add channels loopbio
+```
+
+Once the `loopbio` channel has been enabled, `libvpx` can be installed with:
+
+```
+conda install libvpx
+```
+
+It is possible to list all of the versions of `libvpx` available on your platform with:
+
+```
+conda search libvpx --channel loopbio
+```
+
+
+
+
+Updating libvpx-feedstock
+=========================
+
+If you would like to improve the libvpx recipe or build a new
+package version, please fork this repository and submit a PR. Upon submission,
+your changes will be run on the appropriate platforms to give the reviewer an
+opportunity to confirm that the changes result in a successful build. Once
+merged, the recipe will be re-built and uploaded automatically to the
+`loopbio` channel, whereupon the built conda packages will be available for
+everybody to install and use from the `loopbio` channel.
+Note that all branches in the loopbio/libvpx-feedstock are
+immediately built and any created packages are uploaded, so PRs should be based
+on branches in forks and branches in the main repository should only be used to
+build distinct package versions.
+
+In order to produce a uniquely identifiable distribution:
+ * If the version of a package **is not** being increased, please add or increase
+   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string).
+ * If the version of a package **is** being increased, please remember to return
+   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string)
+   back to 0.
